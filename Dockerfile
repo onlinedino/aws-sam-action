@@ -1,4 +1,4 @@
-FROM python:3-alpine
+FROM python:3
 
 ENV SAM_CLI_TELEMETRY 0
 
