@@ -2,7 +2,8 @@ FROM python:3.8
 
 ENV SAM_CLI_TELEMETRY 0
 
-RUN apk --update --no-cache add jq curl bash gcc musl-dev
+RUN apt-get update -qq 
+RUN apt-get install -y -qq jq curl bash gcc musl-dev
 
 COPY entrypoint.sh /entrypoint.sh
 
